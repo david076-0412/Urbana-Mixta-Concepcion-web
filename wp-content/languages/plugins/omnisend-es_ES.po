@@ -1,0 +1,41 @@
+# Translation of Plugins - Newsletters, Email Marketing, SMS and Popups by Omnisend - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Newsletters, Email Marketing, SMS and Popups by Omnisend - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-07-16 08:38:46+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Newsletters, Email Marketing, SMS and Popups by Omnisend - Stable (latest release)\n"
+
+#: class-omnisend-core-bootstrap.php:88
+#: includes/Internal/class-connection.php:20
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tienes permisos suficientes para acceder a esta página."
+
+#. Plugin Name of the plugin
+#: class-omnisend-core-bootstrap.php
+msgid "Omnisend Email Marketing"
+msgstr "Omnisend Email Marketing"
+
+#: class-omnisend-core-bootstrap.php:152
+msgid "Every minute"
+msgstr "Cada minuto"
+
+#. Author URI of the plugin
+#: class-omnisend-core-bootstrap.php
+msgid "https://www.omnisend.com"
+msgstr "https://www.omnisend.com"
+
+#. Description of the plugin
+#: class-omnisend-core-bootstrap.php
+msgid "Omnisend main plugin that enables integration with Omnisend."
+msgstr "Plugin principal de Omnisend que permite la integración con Omnisend."
+
+#. Author of the plugin
+#: class-omnisend-core-bootstrap.php
+msgid "Omnisend"
+msgstr "Omnisend"

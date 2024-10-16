@@ -1,0 +1,442 @@
+/* =========== Google Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body,
+html {
+	line-height: 1.8;
+	font-family: 'Poppins', sans-serif;
+	color: #969696;
+	text-transform: capitalize;
+	font-weight: 400;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://example.com/MaterialIcons-Regular.eot);
+	/* For IE6-8 */
+	src: local('Material Icons'),
+		local('MaterialIcons-Regular'),
+		url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+		url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+		url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	/* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+/*==========================================================
+  material-icon font-style end
+  ================================*/
+
+
+
+
+
+
+
+:root {
+  --blue: #2a2185;
+  --white: #fff;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+
+body {
+  min-height: 120vh;
+  overflow-x: hidden;
+  background:#f5f5f5;
+}
+
+.container {
+    position: relative;
+	width: 100%;
+	background:#f5f5f5;
+}
+
+
+
+/* ===================== Main ===================== */
+.main {
+  position: absolute;
+  width: calc(80% - 200px);
+  left:50px;
+  min-height: 80vh;
+  background:#f5f5f5;
+  transition: 0.5s;
+}
+.main.active {
+  width: calc(80% - 80px);
+  left: 80px;
+}
+
+
+
+
+
+/* ======================= Cards ====================== */
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 27px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.cardBox .card {
+  position: relative;
+  background: var(--white);
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .numbers {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--black1);
+}
+
+.cardBox .card .cardName {
+  color: var(--black2);
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+  font-size: 3.5rem;
+  color: var(--black2);
+}
+
+.cardBox .card:hover {
+  background: var(--gray);
+}
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+  color: #46A5D8;
+}
+
+
+
+/* ====================== Responsive Design ========================== */
+@media (max-width: 991px) {
+  
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    left: 300px;
+  }
+  .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardHeader h2 {
+    font-size: 10px;
+  }
+  
+  .main.active .toggle {
+    color: #fff;
+    position: fixed;
+    right: 0;
+    left: initial;
+  }
+}
+
+
+
+.top-navbar {
+	height: 100% !important;
+	z-index: 9;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	padding: 15px 30px;
+	background-color: #0099FF;
+
+
+}
+
+.xd-topbar {
+	width: 100%;
+	position: relative;
+}
+
+
+
+
+.sidebar-header h3 {
+	color: #0b1f36;
+	font-size: 17px;
+	margin: 0px;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	font-weight: 600;
+}
+
+.sidebar-header h3 img {
+	width: 45px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+.xp-breadcrumbbar .page-title {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.breadcrumb {
+	display: inline-flex;
+	background-color: transparent;
+	margin: 0;
+	padding: 10px 0 0;
+}
+
+.breadcrumb .breadcrumb-item a {
+	color: rgb(21, 48, 82);
+}
+
+.breadcrumb-item.active {
+	color: #132a46;
+}
+
+
+.breadcrumb-item+.breadcrumb-item {
+	padding-left: .5rem;
+}
+
+.main-content {
+	padding: 30px 30px 0px 30px;
+}
+
+
+
+
+
+.sidebar-header h3 {
+	color: #1c324d;
+	font-size: 17px;
+	margin: 0px;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	font-weight: 600;
+}
+
+.sidebar-header h3 img {
+	width: 45px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn-mas{
+    display: none;
+}
+.container_bot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #16b0f8;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: #fff;
+    color: #16b0f8;
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #16b0f8;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
+
+
+
+
+
+.btn-wsp{
+    
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#16b0f8;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #16b0f8;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+
+
+
+
+
+
+/*-------modal-style start------*/
+.modal .modal-dialog {
+	max-width: 400px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+	padding: 20px 30px;
+}
+
+.modal .modal-content {
+	border-radius: 3px;
+}
+
+.modal .modal-footer {
+	background: #ffffff;
+	border-radius: 0 0 3px 3px;
+}
+
+.modal .modal-title {
+	display: inline-block;
+}
+
+.modal .form-control {
+	border-radius: 2px;
+	box-shadow: none;
+	border-color: #ffffff;
+}
+
+.modal textarea.form-control {
+	resize: vertical;
+}
+
+
+
+
+
+.modal .btn {
+	border-radius: 2px;
+	min-width: 100px;
+}
+
+.modal form label {
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+/*-------modal-style end------*/
+
+
+
+/*-------footer design start------*/
+footer {
+	background-color: #eeeeee;
+	color: #fff;
+	text-align: center;
+	padding: 10px 30px;
+	position: relative;
+	width: 100%;
+}
+
+/*-------footer design end------*/

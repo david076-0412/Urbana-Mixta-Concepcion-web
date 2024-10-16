@@ -1,0 +1,171 @@
+:root{
+    --azul:#134074;
+    --azulOscuro:#0B2545;
+    --azulGris:#8DA9C4;
+    --blanco:#fff;
+    --fuente:'Quicksand', sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente);
+    background-color: #ffffff ;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
+}
+
+.imagen-formulario{
+    background-image: url('/imagen/fondo-estudiante.png');
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    flex: 0 0 calc(60%);
+    position: relative;
+    
+}
+.imagen-formulario::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: transparent;
+   
+}
+
+@media(min-width:768px){
+    .imagen-formulario{
+        height: auto;
+        background-position: right;
+    }
+
+}
+@media(min-width:700px){
+    .imagen-formulario{
+        background-position: center;
+    }
+}
+
+@media(min-width:768px){
+    .contenedor-formulario{
+        display: flex;
+    }
+}
+
+.formulario{
+    padding: 50px;
+    background-color: var(--azul);
+}
+.texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
+    color: #131414;
+}
+.texto-formulario h2{
+    font-size: 40px;
+    text-align: center;
+}
+.texto-formulario p{
+    font-size: 22px;
+    text-align: center;
+}
+.input label{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.password-olvidada a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.input input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+    outline: none;
+}
+.input input[type="submit"]{
+    background-color: var(--azulGris);
+    color: #131414;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color .3s ease-in-out;
+}
+.input input[type="submit"]:hover{
+  
+    cursor: pointer;
+    background-color: var(--azulOscuro);
+}
+
+
+
+
+select {
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ededed;
+    color: #1b1b1b;
+    outline: none;
+}
+
+
+
+
+
+
+
+body {
+	background-position: center;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #505050;
+	font-family: "Rubik", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.5;
+	text-transform: none
+}
+
+.forgot {
+	background-color: #fff;
+	padding: 12px;
+	border: 1px solid #dfdfdf
+}
+
+.padding-bottom-3x {
+	padding-bottom: 72px !important
+}
+
+.card-footer {
+	background-color: #fff
+}
+
+.btn {
+	font-size: 13px
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #76b7e9;
+	outline: 0;
+	box-shadow: 0 0 0 0px #28a745
+}
